@@ -336,8 +336,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.7529412, g: 0.8158152, b: 0.87058824, a: 1}
-    m_HighlightedColor: {r: 0.90588236, g: 0.68235296, b: 0.9607843, a: 0.7647059}
+    m_NormalColor: {r: 0.7019608, g: 0.8158152, b: 0.87058824, a: 1}
+    m_HighlightedColor: {r: 0.90588236, g: 0.68235296, b: 0.9607843, a: 0.84313726}
     m_PressedColor: {r: 0.56078434, g: 0.78431374, b: 0.9137255, a: 0.80784315}
     m_SelectedColor: {r: 0.8, g: 0.9607843, b: 0.9607843, a: 0.59607846}
     m_DisabledColor: {r: 0.8666667, g: 0.74509805, b: 0.78431374, a: 0.89411765}
@@ -358,7 +358,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 127788863}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 251157958}
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &127788863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,7 +383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.74509805, g: 0.78039217, b: 0.9019608, a: 0.8666667}
+  m_Color: {r: 0.74509805, g: 0.78039217, b: 0.9019608, a: 0.95686275}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -461,6 +472,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &251157957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 251157959}
+  - component: {fileID: 251157958}
+  m_Layer: 0
+  m_Name: "\u9078\u55AE\u7BA1\u7406\u5668"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &251157958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251157957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 199ce20039799d540a14c3b1e676b93e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &251157959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251157957}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.446607, y: -0.64405036, z: -136.87497}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &582236497
 GameObject:
@@ -809,8 +863,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.7529412, g: 0.8158152, b: 0.87058824, a: 1}
-    m_HighlightedColor: {r: 0.90588236, g: 0.68235296, b: 0.9607843, a: 0.7647059}
+    m_NormalColor: {r: 0.7019608, g: 0.8158152, b: 0.87058824, a: 1}
+    m_HighlightedColor: {r: 0.90588236, g: 0.68235296, b: 0.9607843, a: 0.84313726}
     m_PressedColor: {r: 0.56078434, g: 0.78431374, b: 0.9137255, a: 0.80784315}
     m_SelectedColor: {r: 0.8, g: 0.9607843, b: 0.9607843, a: 0.59607846}
     m_DisabledColor: {r: 0.8666667, g: 0.74509805, b: 0.78431374, a: 0.89411765}
@@ -831,7 +885,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1147871403}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 251157958}
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1147871403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -845,7 +910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.74509805, g: 0.78039217, b: 0.9019608, a: 0.8666667}
+  m_Color: {r: 0.74509805, g: 0.78039217, b: 0.9019608, a: 0.95686275}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
